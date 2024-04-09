@@ -1,10 +1,18 @@
-Clonar projeto do GitHub
+- CLONAR PROJETO DO GITHUB -
 git clone (link do repositório)
 
 
 SUBIR SUAS ALTERAÇÕES
 (VERIFIQUE SE ESTÁ NA PASTA DO PROJETO)
+
+- IR PARA A PASTA DO PROJETO -
 cd 'pasta do projeto'
+
+- PREPARAR O ARQUIVO - 
 git add .
+
+- SUBMETER AS ALTERAÇÕES - 
 git commit -m "INSIRA COMENTARIO AQUI"
+
+- ATUALIZAR O GITHUB COM AS ALTERAÇÕES - 
 git push
