@@ -1,0 +1,10 @@
+Clonar projeto do GitHub
+git clone (link do repositório)
+
+
+SUBIR SUAS ALTERAÇÕES
+(VERIFIQUE SE ESTÁ NA PASTA DO PROJETO)
+cd 'pasta do projeto'
+git add .
+git commit -m "INSIRA COMENTARIO AQUI"
+git push
