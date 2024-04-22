@@ -1,0 +1,123 @@
+.form {
+    background-color: #ECB744;
+    padding: 25px 35px 25px 35px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 40.1px 0px #393939;
+}
+
+.login {
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.input_box_1,
+.input_box_2 {
+    display: block;
+}
+
+.input_box_1 {
+    padding-top: 20px;
+}
+
+.input_box_2 {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    background: transparent;
+    width: calc(100% - 14px);
+    color: #000;
+}
+
+.remember_forgot {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.remember_forgot label input {
+    mix-blend-mode: multiply;
+    margin-right: 10px;
+}
+
+.remember_forgot a {
+    color: #000;
+    text-decoration: none;
+}
+
+.remember_forgot a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #333;
+}
+
+.remember_forgot b:hover {
+    cursor: pointer;
+    color: #333;
+}
+
+.btn_send input {
+    width: 45%;
+    height: 45px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.btn_send {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_send input:hover {
+    background: #000000;
+    color: #fff;
+}
+
+.welcome h2 {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 80px;
+    text-align: center;
+    color: #33B57F;
+    margin-bottom: 25px;
+}
+
+.welcome p {
+
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44.05px;
+    text-align: center;
+    color: #000;
+}
+
+.welcome p span
+{
+    color: #38C4ED;
+}
+
+
+.form_content {
+    display: flex;
+}
+
+@media only screen and (max-width:1000px) {
+    .form_content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    /* .welcome{ */
+    /* display: none; */
+    /* } */
+}
