@@ -3,14 +3,14 @@ import axios from "axios";
 import style from "./styles.module.css";
 export default function login() {
     const nome = "Selipe"
-    const submit = async() => {
+    const submit = async () => {
         console.log("Meu nome é", nome)
-        try{
+        try {
             const data = await axios.get("https://swapi.py4e.com/api/people");
             console.log(data)
-        } 
-        catch (error){
-            console.log (error)
+        }
+        catch (error) {
+            console.log(error)
         }
     }
     return (
@@ -25,7 +25,8 @@ export default function login() {
                 {/* <!-- DIV DE USUARIO --> */}
                 <div className={style.input_box_1}>
                     {/* <!-- LABEL - ETIQUETA DO USUARIO --> */}
-                    <label htmlFor="user">Usuário</label>
+                    <label htmlFor="user">
+                        <b>Usuário</b></label>
                     <input
                         id="user"
                         className={style.input_box_2}
@@ -38,7 +39,8 @@ export default function login() {
                 {/* <!-- DIV DA SENHA --> */}
                 <div className={style.input_box_1}>
                     {/* <!-- LABEL - ETIQUETA DA SENHA --> */}
-                    <label htmlFor="password">Senha</label>
+                    <label htmlFor="password">
+                        <b>Senha</b></label>
                     <input
                         id="password"
                         className={style.input_box_2}

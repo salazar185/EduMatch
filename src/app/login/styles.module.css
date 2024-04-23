@@ -1,9 +1,24 @@
+.edulogo{
+    margin-left: 35px;
+}
+
+.welcome{
+    max-width: 500px;
+}
+
 .form {
     background-color: #ECB744;
-    padding: 25px 35px 25px 35px;
-    width: 300px;
+    padding: 24px 36px 24px 36px;
+    width: 532px;
     border-radius: 15px;
-    box-shadow: 2px 2px 40.1px 0px #393939;
+    box-shadow: 2px 2px 40px 0px #393939;
+}
+
+.form_content {
+    margin: 140px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .login {
@@ -11,6 +26,7 @@
     text-decoration: underline;
     padding-bottom: 10px;
     text-align: center;
+    font-size: 24px;
 }
 
 .input_box_1,
@@ -19,22 +35,23 @@
 }
 
 .input_box_1 {
-    padding-top: 20px;
+    padding-top: 32px;
 }
 
 .input_box_2 {
     border: 2px solid #000;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 28px;
+    padding: 16px;
     background: transparent;
-    width: calc(100% - 14px);
+    width: calc(100% - 36px);
     color: #000;
+    margin-top: 8px;
 }
 
 .remember_forgot {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px 20px 0px;
+    padding: 28px 0px 28px 0px;
     font-weight: bold;
 }
 
@@ -88,36 +105,62 @@
     line-height: 80px;
     text-align: center;
     color: #33B57F;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .welcome p {
-
     margin: 0;
     font-size: 32px;
     font-weight: 500;
-    line-height: 44.05px;
+    line-height: 40px;
     text-align: center;
     color: #000;
 }
 
-.welcome p span
-{
+.welcome p span {
     color: #38C4ED;
-}
-
-
-.form_content {
-    display: flex;
 }
 
 @media only screen and (max-width:1000px) {
     .form_content {
         flex-direction: column;
         align-items: center;
-
+        margin-top: 40px;
     }
-    /* .welcome{ */
-    /* display: none; */
-    /* } */
+
+    .form{
+        width: calc(100vw - 160px);
+    }
+
+    .headerlogo
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .edulogo{
+        width: 72vw;
+        margin: 0;
+    }
+
+    .welcome{
+        width: 92vw;
+        margin-bottom: 60px;
+    }
+
+    .welcome h2{
+        margin-bottom: 4px;
+        font-size: 32px;
+    }
+
+    .welcome p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .login{
+        font-size: 20px;
+    }
 }
+
