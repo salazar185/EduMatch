@@ -2,9 +2,8 @@
 import axios from "axios";
 import style from "./styles.module.css";
 export default function login() {
-    const nome = "Selipe"
     const submit = async () => {
-        console.log("Meu nome é", nome)
+        console.log()
         try {
             const data = await axios.get("https://swapi.py4e.com/api/people");
             console.log(data)
