@@ -1,7 +1,6 @@
 import Form from "./form";
 import style from "./styles.module.css";
 export default function login() {
-
     return (
         <div>
             <header className={style.headerlogo}>
