@@ -2,62 +2,70 @@ import style from "./styles.home.css"
 export default function home() {
     return (
         <main>
-            {/* DIV GERAL - CONTAINER */}
-            <div className={style.container}>
-
-                {/* ICONE EDUMATCH */}
-                <div>
-                    <img src="/Hat.svg" className={style.hat}></img>
+            <nav class="sidenav">
+                <header className={style.headerlogo}>
+                    <img src="/Hat.svg"></img>
+                </header>
+                <div class="container">
+                    <img src="/hat-home.svg"></img>
+                    <ul class="main-buttons-1">
+                        <li>
+                            Usuários
+                            <ul class="hidden">
+                                <li>Cadastro de usuário</li>
+                                <li>Acompanhamento de alunos</li>
+                                <li>Acompanhamento de tutores</li>
+                                <li>Acompanhamento de professores</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
-                {/* DIV DOS ICONES */}
-                <div>
+                <div class="container">
+                    <img src="/statistic-home.svg"></img>
+                    <ul class="main-buttons-2">
+                        <li>
 
-                    {/* OPÇÃO USUARIOS */}
-                    <div>
-                        <h2>Usuários</h2>
-                        {/* LISTA DAS OPÇÕES */}
-                        <ul>
-                            <li>Cadastro de usuários</li>
-                            <li>Acompanhamento de alunos</li>
-                            <li>Acompanhamento de tutores</li>
-                            <li>Acompanhamento de professores</li>
-                        </ul>
-                    </div>
-
-                    {/* OPÇÃO ESTATÍSTICAS */}
-                    <div>
-                        <h3>Estatísticas</h3>
-                        {/* LISTA DAS OPÇÕES */}
-                        <ul>
-                            <li>Estatísticas de alunos</li>
-                            <li>Estatísticas de tutores</li>
-                            <li>Estatísticas de matérias</li>
-                        </ul>
-                    </div>
-
-                    {/* OPÇÃO CONTEÚDOS */}
-                    <div>
-                        <h4>Conteúdos</h4>
-                        {/* LISTA DAS OPÇÕES */}
-                        <ul>
-                            <li>Adicionar matérias</li>
-                            <li>Adicionar artigos</li>
-                            <li>Adicionar livros</li>
-                            <li>Adicionar trabalhos</li>
-                        </ul>
-                    </div>
-
-                    {/* OPÇÃO CONFIGURAÇÕES */}
-                    <div>
-                        <h5>Configurações</h5>
-                        {/* LISTA DAS OPÇÕES */}
-                        <ul>
-                            <li>Adicionar matérias</li>
-                        </ul>
-                    </div>
+                            Estatísticas
+                            <ul class="hidden">
+                                <li>Estatísticas de alunos</li>
+                                <li>Estatísticas de tutores</li>
+                                <li>Estatísticas de matérias</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </main>
+
+                <div class="container">
+                    <img src="/book-home.svg"></img>
+                    <ul class="main-buttons-3">
+                        <li>
+
+                            Matérias
+                            <ul class="hidden">
+                                <li>Adicionar matérias</li>
+                                <li>Adicionar artigos</li>
+                                <li>Adicionar livros</li>
+                                <li>Adicionar trabalhos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container">
+                    <img src="/engine-home.svg"></img>
+                    <ul class="main-buttons-4">
+                        <li>
+
+                            Configurações
+                            <ul class="hidden">
+                                <li>Suporte</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </main >
     )
 }
